@@ -5,8 +5,11 @@ import { Suspense } from 'react';
 import { FloatingCube } from '../three/FloatingCube';
 import { Button } from '@/components/ui/button';
 import { Download, Eye, Send } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export const HeroSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="min-h-screen flex items-center justify-center relative">
       <div className="container mx-auto px-6 py-20">
@@ -52,6 +55,7 @@ export const HeroSection = () => {
               <Button 
                 size="lg" 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-soft hover:shadow-hover transition-all duration-300"
+                onClick={() => navigate('/projects')}
               >
                 <Eye className="w-5 h-5 mr-2" />
                 View Projects
@@ -60,6 +64,7 @@ export const HeroSection = () => {
                 variant="outline" 
                 size="lg"
                 className="border-primary/50 hover:bg-primary/10 transition-all duration-300"
+                onClick={() => window.open('/resume.pdf', '_blank')}
               >
                 <Download className="w-5 h-5 mr-2" />
                 Download Resume
@@ -68,6 +73,7 @@ export const HeroSection = () => {
                 variant="secondary" 
                 size="lg"
                 className="bg-secondary hover:bg-secondary/90 shadow-soft hover:shadow-hover transition-all duration-300"
+                onClick={() => navigate('/contact')}
               >
                 <Send className="w-5 h-5 mr-2" />
                 Contact Me
@@ -75,29 +81,33 @@ export const HeroSection = () => {
             </motion.div>
           </motion.div>
 
-          {/* 3D Scene */}
+          {/* Clean animated element */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.4, ease: 'easeOut' }}
-            className="h-96 lg:h-[500px] relative"
+            className="h-96 lg:h-[500px] relative flex items-center justify-center"
           >
-            <Canvas className="w-full h-full">
-              <PerspectiveCamera makeDefault position={[0, 0, 6]} />
-              <OrbitControls enableZoom={false} enablePan={false} />
-              
-              <ambientLight intensity={0.5} />
-              <directionalLight position={[10, 10, 5]} intensity={1} />
-              <pointLight position={[-10, -10, -5]} intensity={0.5} color="#E0F6FF" />
-              
-              <Suspense fallback={null}>
-                <FloatingCube />
-                <Environment preset="dawn" />
-              </Suspense>
-            </Canvas>
-            
-            {/* Glow effect */}
-            <div className="absolute inset-0 bg-gradient-mesh opacity-20 blur-3xl animate-glow"></div>
+            <motion.div
+              animate={{ 
+                y: [0, -20, 0],
+                rotateY: [0, 180, 360]
+              }}
+              transition={{ 
+                duration: 6,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              className="w-32 h-32 lg:w-40 lg:h-40 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl backdrop-blur-sm border border-primary/10 shadow-soft flex items-center justify-center"
+            >
+              <motion.div
+                animate={{ rotate: [0, 360] }}
+                transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+                className="text-4xl lg:text-5xl"
+              >
+                💻
+              </motion.div>
+            </motion.div>
           </motion.div>
         </div>
       </div>
