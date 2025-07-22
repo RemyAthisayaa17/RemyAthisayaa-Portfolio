@@ -27,8 +27,8 @@ export const Footer = () => {
             className="flex space-x-6"
           >
             {[
-              { Icon: Github, href: 'https://github.com/remyathisayaa', label: 'GitHub' },
-              { Icon: Linkedin, href: 'https://linkedin.com/in/remyathisayaa', label: 'LinkedIn' },
+              { Icon: Github, href: 'https://github.com/RemyAthisayaa17', label: 'GitHub' },
+              { Icon: Linkedin, href: 'https://www.linkedin.com/in/remy-athisayaa', label: 'LinkedIn' },
               { Icon: Mail, href: 'mailto:remyathisayaa1765@gmail.com', label: 'Email' },
             ].map(({ Icon, href, label }) => (
               <motion.a

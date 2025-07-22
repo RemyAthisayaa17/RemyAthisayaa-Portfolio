@@ -10,7 +10,7 @@ const projects = [
     tech: ["React", "Node.js", "MongoDB", "Express.js"],
     image: "https://images.unsplash.com/photo-1486312338219-ce6862c6f44d",
     liveUrl: "#",
-    githubUrl: "#", // Please provide your GitHub link
+    githubUrl: "https://github.com/RemyAthisayaa17/task-manager-app",
   },
 ];
 
@@ -68,6 +68,7 @@ const Projects = () => {
                   <Button
                     size="sm"
                     className="flex-1 bg-primary hover:bg-primary/90"
+                    onClick={() => window.open(project.liveUrl, '_blank')}
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Live Demo
@@ -76,6 +77,7 @@ const Projects = () => {
                     variant="outline"
                     size="sm"
                     className="flex-1"
+                    onClick={() => window.open(project.githubUrl, '_blank')}
                   >
                     <Github className="w-4 h-4 mr-2" />
                     Code
