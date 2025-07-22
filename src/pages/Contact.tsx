@@ -71,9 +71,9 @@ const Contact = () => {
             
             <div className="space-y-4">
               {[
-                { Icon: Mail, label: "Email", value: "hello@example.com" },
-                { Icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
-                { Icon: MapPin, label: "Location", value: "San Francisco, CA" },
+                { Icon: Mail, label: "Email", value: "remyathisayaa1765@gmail.com" },
+                { Icon: Phone, label: "Phone", value: "+91 9342440234" },
+                { Icon: MapPin, label: "Location", value: "Madurai, Tamil Nadu, India" },
               ].map(({ Icon, label, value }) => (
                 <motion.div
                   key={label}
