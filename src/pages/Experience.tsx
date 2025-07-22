@@ -2,25 +2,25 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    title: "Senior Full Stack Developer",
-    company: "Tech Innovation Co.",
-    period: "2022 - Present",
-    description: "Led development of scalable web applications using React and Node.js. Mentored junior developers and implemented CI/CD pipelines.",
-    tech: ["React", "Node.js", "AWS", "PostgreSQL"]
+    title: "Web Development Intern",
+    company: "Corizo",
+    period: "July - Present",
+    description: "Currently working on web development projects, gaining hands-on experience in modern web technologies and collaborative development practices.",
+    tech: ["HTML", "CSS", "JavaScript", "React.js", "Node.js"]
   },
   {
-    title: "Frontend Developer",
-    company: "Digital Solutions Inc.",
-    period: "2020 - 2022",
-    description: "Developed responsive web applications and improved user experience across multiple products. Collaborated with design teams to implement pixel-perfect interfaces.",
-    tech: ["Vue.js", "TypeScript", "Tailwind CSS", "Jest"]
+    title: "AI Intern",
+    company: "Novitech R&D Private Limited",
+    period: "March - April",
+    description: "Worked on artificial intelligence projects, exploring machine learning concepts and implementing AI solutions for real-world applications.",
+    tech: ["Python", "Machine Learning", "AI Technologies"]
   },
   {
-    title: "Junior Developer",
-    company: "StartUp Labs",
-    period: "2019 - 2020", 
-    description: "Built interactive web components and maintained existing codebases. Gained experience in agile development methodologies.",
-    tech: ["JavaScript", "React", "MongoDB", "Express"]
+    title: "Full Stack Intern",
+    company: "Novitech R&D Private Limited",
+    period: "December - January",
+    description: "Developed full-stack web applications using modern technologies, gained experience in both frontend and backend development.",
+    tech: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB", "Express.js"]
   }
 ];
 

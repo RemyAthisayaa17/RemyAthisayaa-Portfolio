@@ -5,30 +5,12 @@ import { Button } from '@/components/ui/button';
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with React, Node.js, and Stripe integration.",
-    tech: ["React", "Node.js", "MongoDB", "Stripe"],
-    image: "/placeholder-project-1.jpg",
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 2,
     title: "Task Management App",
-    description: "Collaborative project management tool with real-time updates and team features.",
-    tech: ["React", "TypeScript", "Socket.io", "PostgreSQL"],
-    image: "/placeholder-project-2.jpg",
+    description: "A collaborative project management tool with real-time updates and team features for efficient task organization and tracking.",
+    tech: ["React", "Node.js", "MongoDB", "Express.js"],
+    image: "https://images.unsplash.com/photo-1486312338219-ce6862c6f44d",
     liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 3,
-    title: "Weather Dashboard",
-    description: "Beautiful weather app with interactive maps and detailed forecasts.",
-    tech: ["Vue.js", "Python", "FastAPI", "PostgreSQL"],
-    image: "/placeholder-project-3.jpg",
-    liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "#", // Please provide your GitHub link
   },
 ];
 
