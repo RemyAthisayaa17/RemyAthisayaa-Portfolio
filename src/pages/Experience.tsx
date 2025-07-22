@@ -9,13 +9,6 @@ const experiences = [
     tech: ["HTML", "CSS", "JavaScript", "React.js", "Node.js"]
   },
   {
-    title: "AI Intern",
-    company: "Novitech R&D Private Limited",
-    period: "March - April",
-    description: "Worked on artificial intelligence projects, exploring machine learning concepts and implementing AI solutions for real-world applications.",
-    tech: ["Python", "Machine Learning", "AI Technologies"]
-  },
-  {
     title: "Full Stack Intern",
     company: "Novitech R&D Private Limited",
     period: "December - January",
