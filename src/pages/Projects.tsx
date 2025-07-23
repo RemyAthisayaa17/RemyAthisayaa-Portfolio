@@ -8,7 +8,7 @@ const projects = [
     title: "Task Management App",
     description: "A collaborative project management tool with real-time updates and team features for efficient task organization and tracking.",
     tech: ["React", "Node.js", "MongoDB", "Express.js"],
-    image: "https://images.unsplash.com/photo-1486312338219-ce6862c6f44d",
+    image: "/lovable-uploads/0863e104-2f08-4786-a129-26a5abc4cab4.png",
     liveUrl: "https://github.com/RemyAthisayaa17/task-manager-app", // You can add actual deployed URL here
     githubUrl: "https://github.com/RemyAthisayaa17/task-manager-app",
   },
