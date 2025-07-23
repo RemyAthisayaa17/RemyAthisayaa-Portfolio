@@ -43,7 +43,13 @@ const Projects = () => {
               whileHover={{ y: -10, scale: 1.02 }}
               className="bg-card/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-500 border border-border/50"
             >
-              <div className="h-48 bg-gradient-mesh"></div>
+              <div className="h-48 bg-gradient-mesh overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
               
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-foreground">
