@@ -71,9 +71,9 @@ crafting smooth, modern apps with a touch of creativity
                 <Eye className="w-5 h-5 mr-2" />
                 View Projects
               </Button>
-              <Button variant="outline" size="lg" className="border-primary/50 hover:bg-primary/10 transition-all duration-300" onClick={() => window.open('/resume.pdf', '_blank')}>
-                <Download className="w-5 h-5 mr-2" />
-                Download Resume
+              <Button variant="outline" size="lg" className="border-primary/50 hover:bg-primary/10 transition-all duration-300" onClick={() => window.open('https://bit.ly/Remy-resume', '_blank')}>
+                <Eye className="w-5 h-5 mr-2" />
+                View Resume
               </Button>
               <Button variant="secondary" size="lg" className="bg-secondary hover:bg-secondary/90 shadow-soft hover:shadow-hover transition-all duration-300" onClick={() => navigate('/contact')}>
                 <Send className="w-5 h-5 mr-2" />
@@ -82,7 +82,7 @@ crafting smooth, modern apps with a touch of creativity
             </motion.div>
           </motion.div>
 
-          {/* Clean animated element */}
+          {/* Profile Image */}
           <motion.div initial={{
           opacity: 0,
           scale: 0.8
@@ -95,22 +95,30 @@ crafting smooth, modern apps with a touch of creativity
           ease: 'easeOut'
         }} className="h-96 lg:h-[500px] relative flex items-center justify-center">
             <motion.div animate={{
-            y: [0, -20, 0],
-            rotateY: [0, 180, 360]
+            y: [0, -10, 0]
           }} transition={{
-            duration: 6,
+            duration: 4,
             repeat: Infinity,
             ease: "easeInOut"
-          }} className="w-32 h-32 lg:w-40 lg:h-40 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl backdrop-blur-sm border border-primary/10 shadow-soft flex items-center justify-center">
-              <motion.div animate={{
-              rotate: [0, 360]
-            }} transition={{
-              duration: 8,
-              repeat: Infinity,
-              ease: "linear"
-            }} className="text-4xl lg:text-5xl">
-                💻
-              </motion.div>
+          }} className="relative">
+              <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20 backdrop-blur-sm border-4 border-primary/20 shadow-soft">
+                <img 
+                  src="/lovable-uploads/f53965dd-976f-4a9d-8420-0f9a3f854afb.png" 
+                  alt="Remy Athisayaa - Full Stack Developer" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <motion.div 
+                animate={{
+                  scale: [1, 1.05, 1]
+                }} 
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+                className="absolute -inset-1 bg-gradient-to-r from-primary/30 to-secondary/30 rounded-full blur-lg opacity-50"
+              />
             </motion.div>
           </motion.div>
         </div>
