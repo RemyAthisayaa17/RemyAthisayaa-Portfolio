@@ -6,7 +6,7 @@ const experiences = [
     company: "Corizo",
     period: "July - Present",
     description: "Currently working on web development projects, gaining hands-on experience in modern web technologies and collaborative development practices.",
-    tech: ["HTML", "CSS", "JavaScript", "React.js", "Node.js"]
+    tech: ["HTML", "CSS", "JavaScript", "Node.js"]
   },
   {
     title: "Full Stack Intern",

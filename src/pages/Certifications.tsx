@@ -4,32 +4,44 @@ import { Button } from '@/components/ui/button';
 
 const certifications = [
   {
-    title: "AWS Certified Solutions Architect",
-    issuer: "Amazon Web Services",
-    date: "2023",
-    description: "Comprehensive certification covering AWS cloud architecture and best practices.",
-    credentialUrl: "#"
+    title: "Full Stack Development MasterClass",
+    issuer: "NoviTech R&D Pvt Ltd",
+    date: "2025",
+    description: "30 Days MasterClass in Full Stack Development covering comprehensive web development skills.",
+    certificateImage: "/cert-novitech-masterclass.png",
+    type: "certificate"
   },
   {
-    title: "React Developer Certification",
-    issuer: "Meta (Facebook)",
-    date: "2022",
-    description: "Advanced React concepts including hooks, context, and performance optimization.",
-    credentialUrl: "#"
+    title: "Full Stack Development Internship",
+    issuer: "NoviTech R&D Pvt Ltd", 
+    date: "2025",
+    description: "One month internship in Full Stack Development with hands-on project experience.",
+    certificateImage: "/cert-novitech-internship.png",
+    type: "certificate"
   },
   {
-    title: "Google Cloud Professional",
+    title: "Google Gen AI Badge",
     issuer: "Google Cloud",
-    date: "2022",
-    description: "Cloud computing and infrastructure management on Google Cloud Platform.",
-    credentialUrl: "#"
+    date: "2025",
+    description: "Professional certification in Generative AI and machine learning technologies.",
+    credentialUrl: "https://www.cloudskillsboost.google/public_profiles/926d2022-09b2-42a0-9950-6be88b39ab76/badges/14828792",
+    type: "credential"
   },
   {
-    title: "Full Stack Web Development",
-    issuer: "freeCodeCamp",
-    date: "2021",
-    description: "Comprehensive full-stack development covering frontend, backend, and databases.",
-    credentialUrl: "#"
+    title: "Introduction to MERN Stack",
+    issuer: "Simplilearn",
+    date: "2025",
+    description: "Comprehensive course covering MongoDB, Express.js, React.js, and Node.js development.",
+    certificateImage: "/cert-simplilearn-mern.png",
+    type: "certificate"
+  },
+  {
+    title: "Building Dynamic Web Apps with React.js",
+    issuer: "Mepco Schlenk Engineering College",
+    date: "2025",
+    description: "Workshop on building dynamic web applications using React.js at Gyan Mitra '25 National Symposium.",
+    certificateImage: "/cert-workshop-react.png",
+    type: "certificate"
   }
 ];
 
@@ -87,9 +99,16 @@ const Certifications = () => {
                 variant="outline"
                 size="sm"
                 className="w-full border-primary/50 hover:bg-primary/10"
+                onClick={() => {
+                  if (cert.type === "credential" && cert.credentialUrl) {
+                    window.open(cert.credentialUrl, '_blank');
+                  } else if (cert.certificateImage) {
+                    window.open(cert.certificateImage, '_blank');
+                  }
+                }}
               >
                 <ExternalLink className="w-4 h-4 mr-2" />
-                View Credential
+                {cert.type === "credential" ? "View Credential" : "View Certificate"}
               </Button>
             </motion.div>
           ))}
