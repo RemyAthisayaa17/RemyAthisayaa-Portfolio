@@ -88,15 +88,16 @@ const Contact = () => {
             </div>
             
             <div className="space-y-4">
-              {[
-                { Icon: Mail, label: "Email", value: "remyathisayaa1765@gmail.com" },
-                { Icon: Phone, label: "Phone", value: "+91 9342440234" },
-                { Icon: MapPin, label: "Location", value: "Madurai, Tamil Nadu, India" },
-              ].map(({ Icon, label, value }) => (
+               {[
+                { Icon: Mail, label: "Email", value: "remyathisayaa1765@gmail.com", action: () => window.location.href = 'mailto:remyathisayaa1765@gmail.com' },
+                { Icon: Phone, label: "Phone", value: "+91 9342440234", action: () => window.location.href = 'tel:+919342440234' },
+                { Icon: MapPin, label: "Location", value: "Madurai, Tamil Nadu, India", action: null },
+               ].map(({ Icon, label, value, action }) => (
                 <motion.div
                   key={label}
                   whileHover={{ x: 10 }}
-                  className="flex items-center gap-4 p-4 bg-card/50 rounded-lg border border-border/50 hover:bg-card/80 transition-all duration-300"
+                  onClick={action}
+                  className={`flex items-center gap-4 p-4 bg-card/50 rounded-lg border border-border/50 hover:bg-card/80 transition-all duration-300 ${action ? 'cursor-pointer' : ''}`}
                 >
                   <div className="p-2 bg-primary/20 rounded-lg">
                     <Icon className="w-5 h-5 text-primary" />
@@ -127,7 +128,7 @@ const Contact = () => {
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-soft hover:shadow-hover transition-all duration-300"
-                onClick={() => window.open('mailto:remyathisayaa1765@gmail.com', '_blank')}
+                onClick={() => window.location.href = 'mailto:remyathisayaa1765@gmail.com'}
               >
                 <Mail className="w-5 h-5 mr-2" />
                 Email Me Directly
