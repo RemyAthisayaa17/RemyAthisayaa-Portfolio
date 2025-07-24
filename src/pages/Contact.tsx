@@ -110,62 +110,29 @@ const Contact = () => {
             </div>
           </motion.div>
           
-          {/* Contact Form */}
+          {/* Contact Info Only */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="bg-card/80 backdrop-blur-sm rounded-2xl p-8 shadow-soft border border-border/50"
           >
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <Label htmlFor="name" className="text-foreground">Name</Label>
-                <Input
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="mt-2 bg-background/50 border-border/50 focus:border-primary"
-                />
-              </div>
-              
-              <div>
-                <Label htmlFor="email" className="text-foreground">Email</Label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="mt-2 bg-background/50 border-border/50 focus:border-primary"
-                />
-              </div>
-              
-              <div>
-                <Label htmlFor="message" className="text-foreground">Message</Label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={5}
-                  className="mt-2 bg-background/50 border-border/50 focus:border-primary resize-none"
-                />
-              </div>
-              
+            <div className="text-center space-y-6">
+              <h3 className="text-2xl font-semibold text-foreground">
+                Ready to Connect?
+              </h3>
+              <p className="text-muted-foreground">
+                Click the email button below to get in touch directly, or use any of the contact methods on the left.
+              </p>
               <Button
-                type="submit"
                 size="lg"
-                disabled={isSubmitting}
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-soft hover:shadow-hover transition-all duration-300 disabled:opacity-50"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-soft hover:shadow-hover transition-all duration-300"
+                onClick={() => window.open('mailto:remyathisayaa1765@gmail.com', '_blank')}
               >
-                <Send className="w-5 h-5 mr-2" />
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                <Mail className="w-5 h-5 mr-2" />
+                Email Me Directly
               </Button>
-            </form>
+            </div>
           </motion.div>
         </div>
       </div>
