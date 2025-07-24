@@ -71,7 +71,22 @@ crafting smooth, modern apps with a touch of creativity
                 <Eye className="w-5 h-5 mr-2" />
                 View Projects
               </Button>
-              <Button variant="outline" size="lg" className="border-primary/50 hover:bg-primary/10 transition-all duration-300" onClick={() => window.open('https://bit.ly/Remy-resume', '_blank')}>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-primary/50 hover:bg-primary/10 transition-all duration-500 hover:scale-105" 
+                onClick={() => {
+                  // Add smooth loading transition
+                  const button = document.activeElement as HTMLButtonElement;
+                  if (button) {
+                    button.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                      button.style.transform = 'scale(1)';
+                    }, 150);
+                  }
+                  window.open('https://bit.ly/Remyathisayaa', '_blank');
+                }}
+              >
                 <Eye className="w-5 h-5 mr-2" />
                 View Resume
               </Button>

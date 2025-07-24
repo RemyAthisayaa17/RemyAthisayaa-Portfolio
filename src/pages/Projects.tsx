@@ -70,23 +70,15 @@ const Projects = () => {
                   ))}
                 </div>
                 
-                <div className="flex gap-3">
-                  <Button
-                    size="sm"
-                    className="flex-1 bg-primary hover:bg-primary/90"
-                    onClick={() => window.open(project.liveUrl, '_blank')}
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Live Demo
-                  </Button>
+                <div className="flex justify-center">
                   <Button
                     variant="outline"
                     size="sm"
-                    className="flex-1"
+                    className="w-full border-primary/50 hover:bg-primary/10"
                     onClick={() => window.open(project.githubUrl, '_blank')}
                   >
                     <Github className="w-4 h-4 mr-2" />
-                    Code
+                    View Code
                   </Button>
                 </div>
               </div>

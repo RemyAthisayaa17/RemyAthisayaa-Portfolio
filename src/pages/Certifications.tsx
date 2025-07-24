@@ -8,7 +8,7 @@ const certifications = [
     issuer: "NoviTech R&D Pvt Ltd",
     date: "2025",
     description: "30 Days MasterClass in Full Stack Development covering comprehensive web development skills.",
-    certificateImage: "/lovable-uploads/85990ff0-5f6d-43f0-bcf1-8f5816edc3e8.png",
+    certificateImage: "/public/lovable-uploads/85990ff0-5f6d-43f0-bcf1-8f5816edc3e8.png",
     type: "certificate"
   },
   {
@@ -16,7 +16,7 @@ const certifications = [
     issuer: "NoviTech R&D Pvt Ltd", 
     date: "2025",
     description: "One month internship in Full Stack Development with hands-on project experience.",
-    certificateImage: "/lovable-uploads/f503bd5c-958d-488f-be6e-7f4aea4661ba.png",
+    certificateImage: "/public/lovable-uploads/f503bd5c-958d-488f-be6e-7f4aea4661ba.png",
     type: "certificate"
   },
   {
@@ -32,7 +32,7 @@ const certifications = [
     issuer: "Simplilearn",
     date: "2025",
     description: "Comprehensive course covering MongoDB, Express.js, React.js, and Node.js development.",
-    certificateImage: "/lovable-uploads/1ed7820c-cd30-4c65-b2e0-fd6299683326.png",
+    certificateImage: "/public/lovable-uploads/1ed7820c-cd30-4c65-b2e0-fd6299683326.png",
     type: "certificate"
   },
   {
@@ -40,7 +40,7 @@ const certifications = [
     issuer: "Mepco Schlenk Engineering College",
     date: "2025",
     description: "Workshop on building dynamic web applications using React.js at Gyan Mitra '25 National Symposium.",
-    certificateImage: "/lovable-uploads/793e58aa-17ad-42d3-b5d8-476a3fc5dcea.png",
+    certificateImage: "/public/lovable-uploads/793e58aa-17ad-42d3-b5d8-476a3fc5dcea.png",
     type: "certificate"
   }
 ];
