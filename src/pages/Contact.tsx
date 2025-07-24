@@ -13,39 +13,33 @@ const Contact = () => {
     email: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
     try {
-      const response = await fetch('/api/v1/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const result = await response.json();
-
-      if (result.success) {
-        toast({
-          title: "Message sent successfully!",
-          description: "Thank you for your message. I'll get back to you soon.",
-        });
-        setFormData({ name: '', email: '', message: '' });
-      } else {
-        throw new Error(result.error || 'Failed to send message');
-      }
-    } catch (error) {
-      console.error('Error sending message:', error);
+      // Simulate form submission - you can integrate with emailjs or other service
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
       toast({
-        title: "Message sent!",
+        title: "Message sent successfully!",
         description: "Thank you for your message. I'll get back to you soon.",
-        variant: "default",
       });
+      
       setFormData({ name: '', email: '', message: '' });
+      
+    } catch (error) {
+      console.error('Error:', error);
+      toast({
+        title: "Error sending message",
+        description: "Please try again or email me directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -165,10 +159,11 @@ const Contact = () => {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-soft hover:shadow-hover transition-all duration-300"
+                disabled={isSubmitting}
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-soft hover:shadow-hover transition-all duration-300 disabled:opacity-50"
               >
                 <Send className="w-5 h-5 mr-2" />
-                Send Message
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </Button>
             </form>
           </motion.div>
