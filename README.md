@@ -1,3 +1,5 @@
+<img src="portfoliocover.jpeg" alt="Portfolio Cover" width="100%" />
+
 #  RemyAthisayaa-portfolio ✨
 
 Welcome to my personal portfolio — a radiant space that reflects my creativity, prompt engineering skills, and design intuition as a passionate full-stack learner.  
