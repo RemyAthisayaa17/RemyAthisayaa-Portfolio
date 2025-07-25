@@ -5,11 +5,20 @@ import { Button } from '@/components/ui/button';
 const projects = [
   {
     id: 1,
+    title: "Personal Portfolio Website",
+    description: "A modern, responsive portfolio website showcasing my skills, projects, and certifications with smooth animations and interactive UI elements.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    image: "/lovable-uploads/f53965dd-976f-4a9d-8420-0f9a3f854afb.png",
+    liveUrl: "#", // Will be updated after GitHub connection
+    githubUrl: "#", // Will be updated after GitHub connection
+  },
+  {
+    id: 2,
     title: "Task Management App",
     description: "A collaborative project management tool with real-time updates and team features for efficient task organization and tracking.",
     tech: ["React", "Node.js", "MongoDB", "Express.js"],
     image: "/lovable-uploads/0863e104-2f08-4786-a129-26a5abc4cab4.png",
-    liveUrl: "https://github.com/RemyAthisayaa17/task-manager-app", // You can add actual deployed URL here
+    liveUrl: "https://github.com/RemyAthisayaa17/task-manager-app",
     githubUrl: "https://github.com/RemyAthisayaa17/task-manager-app",
   },
 ];
