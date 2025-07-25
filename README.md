@@ -1,4 +1,4 @@
-<img src="portfoliocover.jpeg" alt="Portfolio Cover" width="100%" />
+<img src="portfoliocover.png.jpeg" alt="Portfolio Cover" width="100%" />
 
 #  RemyAthisayaa-portfolio ✨
 
