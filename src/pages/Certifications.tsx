@@ -42,6 +42,14 @@ const certifications = [
     description: "Workshop on building dynamic web applications using React.js at Gyan Mitra '25 National Symposium.",
     certificateImage: "/lovable-uploads/793e58aa-17ad-42d3-b5d8-476a3fc5dcea.png",
     type: "certificate"
+  },
+  {
+    title: "Research Paper Presentation Certificate",
+    issuer: "Solamalai College of Engineering",
+    date: "2025",
+    description: "Certificate of appreciation for presenting research paper on 'Explainable Artificial Intelligence (XAI)' at the 3rd International Conference on Recent Advances and Innovations in Science, Engineering, Technology and Management (iCRAISETM-2025).",
+    certificateImage: "/lovable-uploads/3464154d-3741-45ce-b1a1-e37e661d46a0.png",
+    type: "certificate"
   }
 ];
 

@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 
 const navItems = [
   { name: 'Home', path: '/' },
@@ -13,6 +15,7 @@ const navItems = [
 
 export const Navigation = () => {
   const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <motion.nav 
@@ -51,15 +54,48 @@ export const Navigation = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden p-2 rounded-lg bg-primary/20"
           >
-            <div className="w-6 h-6 flex flex-col justify-center items-center space-y-1">
-              <div className="w-4 h-0.5 bg-foreground rounded"></div>
-              <div className="w-4 h-0.5 bg-foreground rounded"></div>
-              <div className="w-4 h-0.5 bg-foreground rounded"></div>
-            </div>
+            {isMenuOpen ? (
+              <X className="w-6 h-6 text-foreground" />
+            ) : (
+              <Menu className="w-6 h-6 text-foreground" />
+            )}
           </motion.button>
         </div>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden mt-4 pb-4 border-t border-border"
+          >
+            <div className="flex flex-col space-y-2 pt-4">
+              {navItems.map((item) => (
+                <Link 
+                  key={item.path} 
+                  to={item.path}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <motion.div
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className={`px-4 py-3 rounded-lg transition-all duration-300 ${
+                      location.pathname === item.path
+                        ? 'bg-primary text-primary-foreground shadow-soft'
+                        : 'text-foreground hover:bg-primary/20'
+                    }`}
+                  >
+                    {item.name}
+                  </motion.div>
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        )}
       </div>
     </motion.nav>
   );
