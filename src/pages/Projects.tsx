@@ -8,7 +8,7 @@ const projects = [
     title: "Personal Portfolio Website",
     description: "A modern, responsive portfolio website showcasing my skills, projects, and certifications with smooth animations and interactive UI elements.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    image: "/lovable-uploads/f53965dd-976f-4a9d-8420-0f9a3f854afb.png",
+    image: "/lovable-uploads/3f3a4211-1c0d-4c45-a378-50259dcc2279.png",
     liveUrl: "#", // Will be updated after GitHub connection
     githubUrl: "#", // Will be updated after GitHub connection
   },

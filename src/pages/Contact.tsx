@@ -89,8 +89,20 @@ const Contact = () => {
             
             <div className="space-y-4">
                {[
-                { Icon: Mail, label: "Email", value: "remyathisayaa1765@gmail.com", action: () => window.location.href = 'mailto:remyathisayaa1765@gmail.com' },
-                { Icon: Phone, label: "Phone", value: "+91 9342440234", action: () => window.location.href = 'tel:+919342440234' },
+                { Icon: Mail, label: "Email", value: "remyathisayaa1765@gmail.com", action: () => {
+                  try {
+                    window.open('mailto:remyathisayaa1765@gmail.com', '_blank');
+                  } catch (error) {
+                    window.location.href = 'mailto:remyathisayaa1765@gmail.com';
+                  }
+                }},
+                { Icon: Phone, label: "Phone", value: "+91 9342440234", action: () => {
+                  try {
+                    window.open('tel:+919342440234', '_blank');
+                  } catch (error) {
+                    window.location.href = 'tel:+919342440234';
+                  }
+                }},
                 { Icon: MapPin, label: "Location", value: "Madurai, Tamil Nadu, India", action: null },
                ].map(({ Icon, label, value, action }) => (
                 <motion.div
@@ -128,7 +140,13 @@ const Contact = () => {
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-soft hover:shadow-hover transition-all duration-300"
-                onClick={() => window.location.href = 'mailto:remyathisayaa1765@gmail.com'}
+                onClick={() => {
+                  try {
+                    window.open('mailto:remyathisayaa1765@gmail.com', '_blank');
+                  } catch (error) {
+                    window.location.href = 'mailto:remyathisayaa1765@gmail.com';
+                  }
+                }}
               >
                 <Mail className="w-5 h-5 mr-2" />
                 Email Me Directly

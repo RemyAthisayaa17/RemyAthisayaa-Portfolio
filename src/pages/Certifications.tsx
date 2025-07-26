@@ -108,10 +108,14 @@ const Certifications = () => {
                 size="sm"
                 className="w-full border-primary/50 hover:bg-primary/10"
                 onClick={() => {
-                  if (cert.type === "credential" && cert.credentialUrl) {
-                    window.open(cert.credentialUrl, '_blank');
-                  } else if (cert.certificateImage) {
-                    window.open(cert.certificateImage, '_blank');
+                  try {
+                    if (cert.type === "credential" && cert.credentialUrl) {
+                      window.open(cert.credentialUrl, '_blank', 'noopener,noreferrer');
+                    } else if (cert.certificateImage) {
+                      window.open(cert.certificateImage, '_blank', 'noopener,noreferrer');
+                    }
+                  } catch (error) {
+                    console.error('Error opening certificate:', error);
                   }
                 }}
               >
