@@ -9,8 +9,8 @@ const projects = [
     description: "A modern, responsive portfolio website showcasing my skills, projects, and certifications with smooth animations and interactive UI elements.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     image: "/lovable-uploads/3f3a4211-1c0d-4c45-a378-50259dcc2279.png",
-    liveUrl: "#", // Will be updated after GitHub connection
-    githubUrl: "#", // Will be updated after GitHub connection
+    liveUrl: "#", // Will be updated after deployment
+    githubUrl: "https://github.com/RemyAthisayaa17/RemyAthisayaa-Portfolio",
   },
   {
     id: 2,
