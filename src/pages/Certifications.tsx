@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
-import { Award, ExternalLink } from 'lucide-react';
+import { Award, ExternalLink, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useToast } from '@/hooks/use-toast';
 
 const certifications = [
   {
@@ -54,6 +55,41 @@ const certifications = [
 ];
 
 const Certifications = () => {
+  const { toast } = useToast();
+
+  const handleViewCertificate = (cert: typeof certifications[0]) => {
+    try {
+      const url = cert.type === "credential" && cert.credentialUrl 
+        ? cert.credentialUrl 
+        : cert.certificateImage;
+      
+      if (!url || url === "#") {
+        toast({
+          title: "Certificate not available",
+          description: "This certificate is currently being processed.",
+          variant: "destructive",
+        });
+        return;
+      }
+
+      // Test if URL is accessible before opening
+      const link = document.createElement('a');
+      link.href = url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+    } catch (error) {
+      console.error('Error opening certificate:', error);
+      toast({
+        title: "Error opening certificate",
+        description: "Please try again or contact me directly.",
+        variant: "destructive",
+      });
+    }
+  };
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -107,17 +143,7 @@ const Certifications = () => {
                 variant="outline"
                 size="sm"
                 className="w-full border-primary/50 hover:bg-primary/10"
-                onClick={() => {
-                  try {
-                    if (cert.type === "credential" && cert.credentialUrl) {
-                      window.open(cert.credentialUrl, '_blank', 'noopener,noreferrer');
-                    } else if (cert.certificateImage) {
-                      window.open(cert.certificateImage, '_blank', 'noopener,noreferrer');
-                    }
-                  } catch (error) {
-                    console.error('Error opening certificate:', error);
-                  }
-                }}
+                onClick={() => handleViewCertificate(cert)}
               >
                 <ExternalLink className="w-4 h-4 mr-2" />
                 {cert.type === "credential" ? "View Credential" : "View Certificate"}
