@@ -9,7 +9,7 @@ const certifications = [
     issuer: "NoviTech R&D Pvt Ltd",
     date: "2025",
     description: "30 Days MasterClass in Full Stack Development covering comprehensive web development skills.",
-    certificateImage: "/lovable-uploads/85990ff0-5f6d-43f0-bcf1-8f5816edc3e8.png",
+    certificateImage: "https://drive.google.com/file/d/1your-certificate-id/view",
     type: "certificate"
   },
   {
@@ -17,7 +17,7 @@ const certifications = [
     issuer: "NoviTech R&D Pvt Ltd", 
     date: "2025",
     description: "One month internship in Full Stack Development with hands-on project experience.",
-    certificateImage: "/lovable-uploads/f503bd5c-958d-488f-be6e-7f4aea4661ba.png",
+    certificateImage: "https://drive.google.com/file/d/2your-certificate-id/view",
     type: "certificate"
   },
   {
@@ -33,7 +33,7 @@ const certifications = [
     issuer: "Simplilearn",
     date: "2025",
     description: "Comprehensive course covering MongoDB, Express.js, React.js, and Node.js development.",
-    certificateImage: "/lovable-uploads/1ed7820c-cd30-4c65-b2e0-fd6299683326.png",
+    certificateImage: "https://drive.google.com/file/d/3your-certificate-id/view",
     type: "certificate"
   },
   {
@@ -41,7 +41,7 @@ const certifications = [
     issuer: "Mepco Schlenk Engineering College",
     date: "2025",
     description: "Workshop on building dynamic web applications using React.js at Gyan Mitra '25 National Symposium.",
-    certificateImage: "/lovable-uploads/793e58aa-17ad-42d3-b5d8-476a3fc5dcea.png",
+    certificateImage: "https://drive.google.com/file/d/4your-certificate-id/view",
     type: "certificate"
   },
   {
@@ -49,7 +49,7 @@ const certifications = [
     issuer: "Solamalai College of Engineering",
     date: "2025",
     description: "Certificate of appreciation for presenting research paper on 'Explainable Artificial Intelligence (XAI)' at the 3rd International Conference on Recent Advances and Innovations in Science, Engineering, Technology and Management (iCRAISETM-2025).",
-    certificateImage: "/lovable-uploads/3464154d-3741-45ce-b1a1-e37e661d46a0.png",
+    certificateImage: "https://drive.google.com/file/d/5your-certificate-id/view",
     type: "certificate"
   }
 ];
