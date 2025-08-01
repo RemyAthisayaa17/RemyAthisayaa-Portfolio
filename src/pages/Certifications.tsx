@@ -9,7 +9,7 @@ const certifications = [
     issuer: "NoviTech R&D Pvt Ltd",
     date: "2025",
     description: "30 Days MasterClass in Full Stack Development covering comprehensive web development skills.",
-    certificateImage: "https://drive.google.com/file/d/1your-certificate-id/view",
+    certificateImage: "https://drive.google.com/file/d/1G1TjD7Le6GNxX4ZjzfGInFG4ssmQOZ-1/view?usp=drivesdk",
     type: "certificate"
   },
   {
@@ -17,7 +17,7 @@ const certifications = [
     issuer: "NoviTech R&D Pvt Ltd", 
     date: "2025",
     description: "One month internship in Full Stack Development with hands-on project experience.",
-    certificateImage: "https://drive.google.com/file/d/2your-certificate-id/view",
+    certificateImage: "https://drive.google.com/file/d/1Fz3M0EaILwcJMFawHs8uvgTB0BjDcWn3/view?usp=drivesdk",
     type: "certificate"
   },
   {
@@ -33,7 +33,7 @@ const certifications = [
     issuer: "Simplilearn",
     date: "2025",
     description: "Comprehensive course covering MongoDB, Express.js, React.js, and Node.js development.",
-    certificateImage: "https://drive.google.com/file/d/3your-certificate-id/view",
+    certificateImage: "https://drive.google.com/file/d/1FsukOal6bKxwgQXi_8JURmirIjnkdVsH/view?usp=drivesdk",
     type: "certificate"
   },
   {
@@ -41,7 +41,7 @@ const certifications = [
     issuer: "Mepco Schlenk Engineering College",
     date: "2025",
     description: "Workshop on building dynamic web applications using React.js at Gyan Mitra '25 National Symposium.",
-    certificateImage: "https://drive.google.com/file/d/4your-certificate-id/view",
+    certificateImage: "https://drive.google.com/file/d/1FoaL9btGq9hEglacTIyYerbCWnrlu1jD/view?usp=drivesdk",
     type: "certificate"
   },
   {
@@ -49,7 +49,7 @@ const certifications = [
     issuer: "Solamalai College of Engineering",
     date: "2025",
     description: "Certificate of appreciation for presenting research paper on 'Explainable Artificial Intelligence (XAI)' at the 3rd International Conference on Recent Advances and Innovations in Science, Engineering, Technology and Management (iCRAISETM-2025).",
-    certificateImage: "https://drive.google.com/file/d/5your-certificate-id/view",
+    certificateImage: "https://drive.google.com/file/d/1Fnus0oHuMfzZ1OoZ3I1T4gVWtsR2mStQ/view?usp=drivesdk",
     type: "certificate"
   }
 ];
