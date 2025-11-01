@@ -23,12 +23,12 @@ const projects = [
   },
   {
     id: 3,
-    title: "Calculator App",
-    description: "A functional desktop calculator application built using Python's Tkinter GUI library, featuring standard arithmetic operations and a clean interface.",
+    title: "Kawaii Calculator",
+    description: "A cute and functional desktop calculator application built using Python's Tkinter GUI library, featuring a kawaii-themed pink interface with standard arithmetic operations.",
     tech: ["Python", "Tkinter", "GUI"],
-    image: "/lovable-uploads/0863e104-2f08-4786-a129-26a5abc4cab4.png",
-    liveUrl: "#",
-    githubUrl: "#",
+    image: "/lovable-uploads/kawaii-calci.jpg",
+    liveUrl: "https://github.com/RemyAthisayaa17/kawaii_calci",
+    githubUrl: "https://github.com/RemyAthisayaa17/kawaii_calci",
   },
 ];
 
