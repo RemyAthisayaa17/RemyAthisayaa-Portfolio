@@ -7,13 +7,13 @@ const certifications = [
   {
     title: "Mastering AI Agents Bootcamp",
     issuer: "Udemy",
-    date: "October 2025",
+    date: "2025",
     description: "Comprehensive bootcamp on building and deploying AI agents, covering advanced techniques in artificial intelligence and automation.",
-    certificateImage: "https://drive.google.com/file/d/1P7isyXtID1AukIratrXfJ4olJm6Q3dzk/view?usp=drivesdk",
+    certificateImage: "https://drive.google.com/file/d/1CX6IR6SBjtFD6wf0jiRrhmFB8Dd_1115/view?usp=drivesdk",
     type: "certificate"
   },
   {
-    title: "Generate AI",
+    title: "Generative AI",
     issuer: "Google",
     date: "2025",
     description: "Professional certification in Generative AI technologies and implementation strategies from Google.",
@@ -41,7 +41,7 @@ const certifications = [
     issuer: "Mindluster",
     date: "2025",
     description: "Intensive crash course covering fundamental and advanced concepts in HTML and CSS for modern web development.",
-    certificateImage: "https://drive.google.com/file/d/1CX6IR6SBjtFD6wf0jiRrhmFB8Dd_1115/view?usp=drivesdk",
+    certificateImage: "https://drive.google.com/file/d/1P7isyXtID1AukIratrXfJ4olJm6Q3dzk/view?usp=drivesdk",
     type: "certificate"
   }
 ];
