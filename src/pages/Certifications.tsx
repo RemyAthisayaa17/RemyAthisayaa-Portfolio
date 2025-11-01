@@ -5,35 +5,27 @@ import { useToast } from '@/hooks/use-toast';
 
 const certifications = [
   {
-    title: "Full Stack Development MasterClass",
-    issuer: "NoviTech R&D Pvt Ltd",
+    title: "Mastering AI Agents Bootcamp",
+    issuer: "Udemy",
     date: "2025",
-    description: "30 Days MasterClass in Full Stack Development covering comprehensive web development skills.",
-    certificateImage: "https://drive.google.com/file/d/1G1TjD7Le6GNxX4ZjzfGInFG4ssmQOZ-1/view?usp=drivesdk",
+    description: "Comprehensive bootcamp on building and deploying AI agents, covering advanced techniques in artificial intelligence and automation.",
+    certificateImage: "#",
     type: "certificate"
   },
   {
-    title: "Full Stack Development Internship",
-    issuer: "NoviTech R&D Pvt Ltd", 
+    title: "Generate AI",
+    issuer: "Google",
     date: "2025",
-    description: "One month internship in Full Stack Development with hands-on project experience.",
-    certificateImage: "https://drive.google.com/file/d/1Fz3M0EaILwcJMFawHs8uvgTB0BjDcWn3/view?usp=drivesdk",
-    type: "certificate"
-  },
-  {
-    title: "Google Gen AI Badge",
-    issuer: "Google Cloud",
-    date: "2025",
-    description: "Professional certification in Generative AI and machine learning technologies.",
+    description: "Professional certification in Generative AI technologies and implementation strategies from Google.",
     credentialUrl: "https://www.cloudskillsboost.google/public_profiles/926d2022-09b2-42a0-9950-6be88b39ab76/badges/14828792",
     type: "credential"
   },
   {
-    title: "Introduction to MERN Stack",
-    issuer: "Simplilearn",
+    title: "Full Stack Development MasterClass",
+    issuer: "Novitech R&D Pvt Ltd",
     date: "2025",
-    description: "Comprehensive course covering MongoDB, Express.js, React.js, and Node.js development.",
-    certificateImage: "https://drive.google.com/file/d/1FsukOal6bKxwgQXi_8JURmirIjnkdVsH/view?usp=drivesdk",
+    description: "30 Days MasterClass in Full Stack Development covering comprehensive web development skills.",
+    certificateImage: "https://drive.google.com/file/d/1G1TjD7Le6GNxX4ZjzfGInFG4ssmQOZ-1/view?usp=drivesdk",
     type: "certificate"
   },
   {
@@ -45,11 +37,11 @@ const certifications = [
     type: "certificate"
   },
   {
-    title: "Research Paper Presentation Certificate",
-    issuer: "Solamalai College of Engineering",
+    title: "HTML & CSS Crash Course",
+    issuer: "Mindluster",
     date: "2025",
-    description: "Certificate of appreciation for presenting research paper on 'Explainable Artificial Intelligence (XAI)' at the 3rd International Conference on Recent Advances and Innovations in Science, Engineering, Technology and Management (iCRAISETM-2025).",
-    certificateImage: "https://drive.google.com/file/d/1Fnus0oHuMfzZ1OoZ3I1T4gVWtsR2mStQ/view?usp=drivesdk",
+    description: "Intensive crash course covering fundamental and advanced concepts in HTML and CSS for modern web development.",
+    certificateImage: "#",
     type: "certificate"
   }
 ];

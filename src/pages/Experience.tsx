@@ -2,17 +2,24 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    title: "Web Development Intern",
+    title: "UI/UX Intern",
     company: "Corizo",
-    period: "July - Present",
-    description: "Currently working on web development projects, gaining hands-on experience in modern web technologies and collaborative development practices.",
-    tech: ["HTML", "CSS", "JavaScript", "Node.js"]
+    period: "September 2025 - October 2025",
+    description: "Focused on user interface and user experience design, creating intuitive and visually appealing designs for web applications while collaborating with development teams.",
+    tech: ["Figma", "UI/UX Design", "Prototyping", "User Research"]
   },
   {
-    title: "Full Stack Intern",
-    company: "Novitech R&D Private Limited",
-    period: "December - January",
-    description: "Developed full-stack web applications using modern technologies, gained experience in both frontend and backend development.",
+    title: "Web Development Intern",
+    company: "Corizo",
+    period: "July 2025 - August 2025",
+    description: "Worked on web development projects, gaining hands-on experience in modern web technologies and collaborative development practices.",
+    tech: ["HTML", "CSS", "JavaScript", "React"]
+  },
+  {
+    title: "Full Stack Development Intern",
+    company: "Novitech R&D Pvt Ltd",
+    period: "December 2023 - January 2024",
+    description: "Developed full-stack web applications using modern technologies, gained experience in both frontend and backend development with real-world project implementation.",
     tech: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB", "Express.js"]
   }
 ];

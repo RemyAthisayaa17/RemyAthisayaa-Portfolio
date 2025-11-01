@@ -51,8 +51,8 @@ export const HeroSection = () => {
           }} transition={{
             duration: 0.8,
             delay: 0.4
-          }} className="text-xl text-muted-foreground max-w-lg mx-auto lg:mx-0">MERN Stack Developer 
-crafting smooth, modern apps with a touch of creativity
+          }} className="text-xl text-muted-foreground max-w-lg mx-auto lg:mx-0">Full Stack Developer specializing in React and Python, 
+crafting intuitive UI/UX experiences with AI-powered solutions and creative engineering
 
 
           </motion.p>
@@ -84,7 +84,7 @@ crafting smooth, modern apps with a touch of creativity
                       button.style.transform = 'scale(1)';
                     }, 150);
                   }
-                  window.open('https://bit.ly/Remyathisayaa', '_blank');
+                  window.open('https://drive.google.com/file/d/1xT2br6u4tEdde-h6026Fgcjvc030goVr/view?usp=drivesdk', '_blank');
                 }}
               >
                 <Eye className="w-5 h-5 mr-2" />

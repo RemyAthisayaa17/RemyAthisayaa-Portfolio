@@ -21,6 +21,15 @@ const projects = [
     liveUrl: "https://github.com/RemyAthisayaa17/task-manager-app",
     githubUrl: "https://github.com/RemyAthisayaa17/task-manager-app",
   },
+  {
+    id: 3,
+    title: "Calculator App",
+    description: "A functional desktop calculator application built using Python's Tkinter GUI library, featuring standard arithmetic operations and a clean interface.",
+    tech: ["Python", "Tkinter", "GUI"],
+    image: "/lovable-uploads/0863e104-2f08-4786-a129-26a5abc4cab4.png",
+    liveUrl: "#",
+    githubUrl: "#",
+  },
 ];
 
 const Projects = () => {

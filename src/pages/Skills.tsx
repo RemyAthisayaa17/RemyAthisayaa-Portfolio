@@ -8,12 +8,12 @@ const skillCategories = [
   },
   {
     title: "Backend", 
-    skills: ["Node.js", "Express.js", "MongoDB"],
+    skills: ["Python", "Django", "MySQL"],
     color: "from-secondary to-secondary/50"
   },
   {
     title: "Tools & Others",
-    skills: ["Git", "GitHub", "Prompt Engineering", "Research"],
+    skills: ["Git", "GitHub", "Prompt Engineering", "AI Tools & Agents"],
     color: "from-accent to-accent/50"
   }
 ];
