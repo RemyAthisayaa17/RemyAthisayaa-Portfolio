@@ -7,9 +7,9 @@ const certifications = [
   {
     title: "Mastering AI Agents Bootcamp",
     issuer: "Udemy",
-    date: "2025",
+    date: "October 2025",
     description: "Comprehensive bootcamp on building and deploying AI agents, covering advanced techniques in artificial intelligence and automation.",
-    certificateImage: "#",
+    certificateImage: "https://drive.google.com/file/d/1P7isyXtID1AukIratrXfJ4olJm6Q3dzk/view?usp=drivesdk",
     type: "certificate"
   },
   {
@@ -41,7 +41,7 @@ const certifications = [
     issuer: "Mindluster",
     date: "2025",
     description: "Intensive crash course covering fundamental and advanced concepts in HTML and CSS for modern web development.",
-    certificateImage: "#",
+    certificateImage: "https://drive.google.com/file/d/1CX6IR6SBjtFD6wf0jiRrhmFB8Dd_1115/view?usp=drivesdk",
     type: "certificate"
   }
 ];
