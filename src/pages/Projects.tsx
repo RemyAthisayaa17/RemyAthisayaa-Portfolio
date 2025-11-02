@@ -30,6 +30,15 @@ const projects = [
     liveUrl: "https://github.com/RemyAthisayaa17/kawaii_calci",
     githubUrl: "https://github.com/RemyAthisayaa17/kawaii_calci",
   },
+  {
+    id: 4,
+    title: "GlowBot - Affirmation Bot",
+    description: "An interactive chatbot that provides personalized daily affirmations and motivational messages. Built with vanilla JavaScript, featuring a beautiful pink-themed UI with smooth animations.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: "/lovable-uploads/affirmation-bot.png",
+    liveUrl: "https://github.com/RemyAthisayaa17/affirmation-bot",
+    githubUrl: "https://github.com/RemyAthisayaa17/affirmation-bot",
+  },
 ];
 
 const Projects = () => {
