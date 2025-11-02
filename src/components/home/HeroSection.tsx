@@ -118,7 +118,7 @@ crafting intuitive UI/UX experiences with AI-powered solutions and creative engi
           }} className="relative">
               <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20 backdrop-blur-sm border-4 border-primary/20 shadow-soft">
                 <img 
-                  src="/lovable-uploads/profile-photo.png" 
+                  src="/lovable-uploads/f53965dd-976f-4a9d-8420-0f9a3f854afb.png" 
                   alt="Remy Athisayaa - Full Stack Developer" 
                   className="w-full h-full object-cover"
                 />
