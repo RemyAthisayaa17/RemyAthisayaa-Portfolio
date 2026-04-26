@@ -36,8 +36,10 @@ const About = () => {
           duration: 0.8,
           delay: 0.2
         }} className="text-lg text-muted-foreground leading-relaxed mb-12">
-            <p className="mb-6">Hello! I'm REMY ATHISAYAA, a passionate Full Stack Developer with a love for creating beautiful, functional web applications. My journey in tech started with curiosity and has evolved into a career dedicated to crafting exceptional digital experiences that merge design with functionality.</p>
-            <p className="mb-6">I specialize in modern web technologies including React for frontend development and Python with Django for backend solutions. With a keen eye for UI/UX design and expertise in prompt engineering and AI tools, I create intelligent, user-centered applications. I believe in writing clean, maintainable code and staying at the forefront of emerging technologies and best practices.</p>
+            <p className="mb-6">I'm a full-stack developer graduating in June 2026 from Mangayarkarasi College of Engineering (CGPA 8.4), with hands-on experience building web applications and AI-integrated projects.</p>
+            <p className="mb-6">I've worked with React, Python, Flask, and Gemini API to build tools like an AI-assisted interview prep platform and a semantic resume-to-job matcher. These projects gave me practical exposure to prompt engineering, NLP APIs, and workflow automation using UiPath.</p>
+            <p className="mb-6">I've completed 10 months of internship training at Corizo Edutech (full-stack development and UI/UX) and NoviTech R&D (MERN stack), and I've presented project work at two academic technical conferences.</p>
+            <p className="mb-6">Currently transitioning from Software Trainee to Junior Developer, with a strong interest in teams building products with AI components.</p>
           </motion.div>
         </div>
       </div>

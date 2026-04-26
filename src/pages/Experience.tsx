@@ -5,21 +5,21 @@ const experiences = [
     title: "UI/UX Intern",
     company: "Corizo",
     period: "September 2025 - October 2025",
-    description: "Focused on user interface and user experience design, creating intuitive and visually appealing designs for web applications while collaborating with development teams.",
+    description: "Completed structured UI/UX training with hands-on practice in Figma, wireframing, and interface design. Worked on design tasks for web application modules and supported design-to-development handoff.",
     tech: ["Figma", "UI/UX Design", "Prototyping", "User Research"]
   },
   {
     title: "Web Development Intern",
     company: "Corizo",
     period: "July 2025 - August 2025",
-    description: "Worked on web development projects, gaining hands-on experience in modern web technologies and collaborative development practices.",
+    description: "Completed a structured web development training program covering React, HTML, CSS, JavaScript, and Bootstrap. Built assigned practice projects and applied Git/GitHub for version control.",
     tech: ["HTML", "CSS", "JavaScript", "React"]
   },
   {
     title: "Full Stack Development Intern",
     company: "Novitech R&D Pvt Ltd",
     period: "December 2023 - January 2024",
-    description: "Developed full-stack web applications using modern technologies, gained experience in both frontend and backend development with real-world project implementation.",
+    description: "Completed a 2-month full-stack development internship covering MERN stack fundamentals. Built a full-stack application using MongoDB, Express, React, and Node.js as the program deliverable.",
     tech: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB", "Express.js"]
   }
 ];
