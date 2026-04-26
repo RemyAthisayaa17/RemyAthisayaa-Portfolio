@@ -53,7 +53,7 @@ export const Footer = () => {
           className="text-center mt-8 pt-6 border-t border-border"
         >
           <p className="text-muted-foreground text-sm">
-            © 2024 Portfolio. Built with passion and code.
+            © 2026 Portfolio. Built with passion and code.
           </p>
         </motion.div>
       </div>

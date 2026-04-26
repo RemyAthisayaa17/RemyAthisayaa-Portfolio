@@ -8,7 +8,7 @@ const skillCategories = [
   },
   {
     title: "Backend", 
-    skills: ["Python", "Django", "MySQL"],
+    skills: ["Python", "Flask", "Express", "MySQL", "MS SQL", "PostgreSQL", "API"],
     color: "from-secondary to-secondary/50"
   },
   {

@@ -35,7 +35,7 @@ export const HeroSection = () => {
           }}>
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
                 <span className="bg-gradient-text bg-clip-text text-transparent">
-                  Full Stack
+                  Software
                 </span>
                 <br />
                 <span className="text-foreground">Developer</span>
@@ -51,10 +51,7 @@ export const HeroSection = () => {
           }} transition={{
             duration: 0.8,
             delay: 0.4
-          }} className="text-xl text-muted-foreground max-w-lg mx-auto lg:mx-0">Full Stack Developer specializing in React and Python, 
-crafting intuitive UI/UX experiences with AI-powered solutions and creative engineering
-
-
+          }} className="text-xl text-muted-foreground max-w-lg mx-auto lg:mx-0">Full-stack developer with AI project experience — building web applications using React, Python, Flask, and Gemini API.
           </motion.p>
 
             <motion.div initial={{
